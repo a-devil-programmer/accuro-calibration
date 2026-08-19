@@ -8,15 +8,14 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Header -->
   <header class="navbar">
     <div class="logo">
-      <a href="index.html">Accuro Calibration</a>
+      <a href="index.html">Accuro <span>Calibration</span></a>
     </div>
-    <nav>
-      <!-- Dropdown Menu for Services -->
+    <nav class="nav-links">
       <div class="dropdown">
-        <a href="#services" class="dropbtn">Services ▾</a>
+        <a href="#services">Services ▾</a>
         <div class="dropdown-content">
           <a href="calibration.html">Calibration Services</a>
           <a href="automation.html">Instrumentation & Automation</a>
@@ -29,50 +28,99 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <span class="badge">ON-SITE CALIBRATION</span>
-      <h1>Precision calibration, brought to your floor</h1>
-      <p>We deliver traceable temperature, pressure, and process loop testing on-site, so you skip freight risks and keep downtime to a minimum.</p>
-      <a href="#contact" class="btn-primary">Get On-Site Quote</a>
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="badge">Mobile Metrology Lab</span>
+      <h1>Precision Calibration, Brought to Your Floor</h1>
+      <p>We deliver standard-traceable temperature, pressure, and process loop calibration directly on-site across Kerala—eliminating freight risks and minimizing plant downtime.</p>
+      <a href="#contact" class="btn-primary">Request On-Site Quote</a>
     </div>
   </section>
 
-  <!-- Key Features / Services -->
-  <section id="services" class="services">
-    <h2>Field service built around ISO 17025 traceability</h2>
-    <div class="metrics">
-      <div class="metric-card">
-        <h3>3</h3>
-        <p><strong>Core Parameters</strong><br>Temperature, pressure, and process loop testing.</p>
+  <!-- Key Statistics Highlights -->
+  <section class="section bg-light">
+    <div class="section-title">
+      <h2>Built Around Standard Traceability</h2>
+      <p>Delivering compliant, audit-ready field metrology to suit your plant's scheduled maintenance window.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="number">3</div>
+        <p><strong>Core Parameters</strong><br>Temperature, Pressure, and Process Loops</p>
       </div>
-      <div class="metric-card">
-        <h3>0</h3>
-        <p><strong>Freight Risks</strong><br>Instruments stay safe on your facility floor.</p>
+      <div class="stat-box">
+        <div class="number">0</div>
+        <p><strong>Freight Risks</strong><br>Instruments remain safe inside your facility</p>
       </div>
-      <div class="metric-card">
-        <h3>100%</h3>
-        <p><strong>Audit-Ready Reports</strong><br>Traceable documentation delivered before leaving.</p>
+      <div class="stat-box">
+        <div class="number">100%</div>
+        <p><strong>Audit-Ready Reports</strong><br>Traceable documentation before leaving site</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Services Overview -->
+  <section id="services" class="section">
+    <div class="section-title">
+      <h2>Our Core Services</h2>
+      <p>Explore our specialized field calibration and automation solutions.</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Calibration Services">
+        <div class="card-body">
+          <h3>Calibration Services</h3>
+          <p>On-site testing and verification for temperature sensors, pressure gauges, transducers, and process loop instruments.</p>
+          <a href="calibration.html" class="card-link">View Calibration Services →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=600&q=80" alt="Instrumentation & Automation">
+        <div class="card-body">
+          <h3>Instrumentation & Automation</h3>
+          <p>PLC/SCADA loop verification, control valve setup, and process automation troubleshooting to keep your lines running smoothly.</p>
+          <a href="automation.html" class="card-link">View Automation Services →</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Accuro Calibration</h2>
-    <p>Plant teams across Kerala rely on Accuro for fast, traceable field calibration that fits their maintenance window. We bring standard-traceable testing directly to your floor, eliminating shipping risks and reducing downtime.</p>
+  <section id="about" class="section bg-light">
+    <div class="section-title">
+      <h2>About Accuro Calibration</h2>
+      <p>Plant teams rely on Accuro for rapid, accurate field service tailored to their maintenance windows. Our mobile calibration setup brings master standards directly to your facility floor.</p>
+    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Request Your On-Site Quote</h2>
-    <p>Get a field service plan tailored to your plant's maintenance window.</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Business Email" required>
-      <input type="text" placeholder="Company Name / Location" required>
-      <textarea placeholder="Tell us about your calibration requirements..." rows="4"></textarea>
-      <button type="submit" class="btn-primary">Submit Request</button>
+  <!-- Contact / Quote Request Form -->
+  <section id="contact" class="section quote-section">
+    <div class="section-title">
+      <h2>Request Your On-Site Quote</h2>
+      <p>Get a custom service plan built around your facility's operational needs.</p>
+    </div>
+
+    <form class="quote-form">
+      <div class="form-group">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Company Name" required>
+        <select required>
+          <option value="">Service Required</option>
+          <option value="calibration">Field Calibration Services</option>
+          <option value="automation">Instrumentation & Automation</option>
+          <option value="both">Combined Service Package</option>
+        </select>
+      </div>
+      <textarea rows="4" placeholder="Briefly describe your equipment or service timeline..."></textarea>
+      <button type="submit" class="btn-primary">Submit Quote Request</button>
     </form>
   </section>
 
