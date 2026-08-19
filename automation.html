@@ -3,59 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instrumentation & Automation - Accuro Calibration</title>
+  <title>Instrumentation & Automation | Accuro Calibration</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Navigation Header -->
   <header class="navbar">
-    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Accuro Calibration</a></div>
-    <nav>
+    <div class="logo">
+      <a href="index.html">Accuro <span>Calibration</span></a>
+    </div>
+    <nav class="nav-links">
       <div class="dropdown">
-        <a href="#" class="dropbtn">Services ▾</a>
+        <a href="#services" class="active">Services ▾</a>
         <div class="dropdown-content">
           <a href="calibration.html">Calibration Services</a>
           <a href="automation.html">Instrumentation & Automation</a>
         </div>
       </div>
       <a href="index.html#about">About</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="index.html#contact" class="btn-primary">Get On-Site Quote</a>
+    <a href="#contact" class="btn-primary">Request Quote</a>
   </header>
 
-  <main class="content-container">
-    <h1>Instrumentation & Automation Services</h1>
-    <p class="subtitle">Optimizing field instrumentation, loop tuning, and control systems to drive seamless plant operations.</p>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="badge">Process Control & Automation</span>
+      <h1>Instrumentation & Automation Solutions</h1>
+      <p>Optimize plant efficiency with expert field instrumentation setup, PLC/SCADA loop checks, and process troubleshooting.</p>
+      <a href="#contact" class="btn-primary">Request Technical Service</a>
+    </div>
+  </section>
 
-    <hr>
+  <!-- Services Grid -->
+  <section class="section">
+    <div class="section-title">
+      <h2>Automation & Loop Integration</h2>
+      <p>Comprehensive field support for industrial control systems:</p>
+    </div>
 
-    <section class="service-detail">
-      <h2>1. Field Instrumentation Support & Troubleshooting</h2>
-      <h3>What We Do:</h3>
-      <p>Installation verification, diagnostic health checks, configuration, and repair services for industrial transmitters, flow meters, level sensors, and control valves.</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=600&q=80" alt="PLC Loop Checking">
+        <div class="card-body">
+          <h3>PLC / SCADA Loop Checks</h3>
+          <p>End-to-end verification of field input/output signals to your control system to ensure seamless communication and response.</p>
+        </div>
+      </div>
 
-      <h3>What the Discipline Means:</h3>
-      <p>Instrumentation is the eyes and ears of an industrial plant. This field focuses on sensor integration, communication protocols (HART, Modbus, Profibus), and real-time process monitoring.</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Transmitter Commissioning">
+        <div class="card-body">
+          <h3>Transmitter Commissioning</h3>
+          <p>Field configuration, range setup, and span adjustments for smart HART and analog process transmitters.</p>
+        </div>
+      </div>
 
-      <h3>How It Affects Your Process:</h3>
-      <p>Faulty instrumentation causes false alarms, erratic process control, and unplanned trips. Expert field support keeps sensor signals reliable, ensuring process parameters stay strictly within designated operating limits.</p>
-    </section>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Control Valve Setup">
+        <div class="card-body">
+          <h3>Control Valve & Actuator Setup</h3>
+          <p>Calibration of current-to-pressure (I/P) converters and valve positioners for precise fluid control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="service-detail">
-      <h2>2. Process Automation & Loop Optimization</h2>
-      <h3>What We Do:</h3>
-      <p>PID loop tuning, control logic verification, and signal integration between field devices and centralized PLC/DCS controllers.</p>
+  <!-- Benefits Section -->
+  <section class="section bg-dark">
+    <div class="section-title">
+      <h2>Why Optimize Process Automation?</h2>
+      <p style="color: #94a3b8;">Prevent unexpected shutdowns and maintain tight process control.</p>
+    </div>
 
-      <h3>What the Discipline Means:</h3>
-      <p>Automation uses integrated control algorithms to automatically maintain process stability without requiring continuous manual operator intervention.</p>
+    <ul class="benefits-list">
+      <li><strong>Reduced Process Variation:</strong> Precise transmitter and loop tuning prevents product quality shifts.</li>
+      <li><strong>Faster Commissioning:</strong> Structured end-to-end loop checks speed up new plant startups and revamps.</li>
+      <li><strong>Enhanced System Reliability:</strong> Detect weak field signals, ground loops, or wiring faults before they trigger trips.</li>
+    </ul>
+  </section>
 
-      <h3>How It Affects Your Process:</h3>
-      <p>Poorly tuned control loops lead to valve oscillation, excessive energy consumption, thermal cycling, and accelerated equipment wear. Proper loop tuning stabilizes your process, saves energy, and improves throughput.</p>
-    </section>
+  <!-- Quote Section -->
+  <section id="contact" class="section quote-section">
+    <div class="section-title">
+      <h2>Request Instrumentation Support</h2>
+      <p>Speak with us about your process loop checks, setup, or troubleshooting needs.</p>
+    </div>
 
-  </main>
+    <form class="quote-form">
+      <div class="form-group">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Company Name" required>
+        <select required>
+          <option value="">Scope of Support</option>
+          <option value="loop-checks">PLC / SCADA Loop Checks</option>
+          <option value="commissioning">Instrument Commissioning</option>
+          <option value="troubleshooting">Process Troubleshooting</option>
+        </select>
+      </div>
+      <textarea rows="4" placeholder="Describe your control system or loop check requirements..."></textarea>
+      <button type="submit" class="btn-primary">Submit Technical Request</button>
+    </form>
+  </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 Accuro Calibration & Metrology Services. All rights reserved.</p>
   </footer>
